@@ -1,0 +1,12 @@
+<h1>Home</h1>
+<hr>
+<div>
+    {% for usertype in usertypes %}
+        {{ usertype.id }} {{ usertype.userAgency }}
+    {% endfor %}
+</div>
+<div>
+    {% for dzongkhag in dzongkhags %}
+        {{ dzongkhag.dzoID }}. {{ dzongkhag.dzongkhagNames }} <br>
+    {% endfor %}
+</div>
